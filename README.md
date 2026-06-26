@@ -2,12 +2,14 @@
 
 Chaotic, unhinged, and slightly based retry messages for when Grok/xAI decides to have a moment.
 
-Instead of boring technical logs like  
-`[Grok] Attempt 3/5 — HTTP 503: Service Unavailable`,  
+Instead of boring technical logs like
+```bash
+`[Grok] Attempt 3/5 — HTTP 503: Service Unavailable`
+```  
 you can get something like:
-
-> Grok read too many shitposts on X and went on an existential bender.
-
+```bash
+Grok read too many shitposts on X and went on an existential bender.
+```
 ## What is this?
 
 A small collection of humorous one-liners + helper functions to use in logs, Telegram bots, Discord notifications, or anywhere else when Grok is retrying, rate-limited, or temporarily unavailable.
