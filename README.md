@@ -16,14 +16,6 @@ A small collection of humorous one-liners + helper functions to use in logs, Tel
 
 Made for people who are tired of dry error messages.
 
-## Installation
-
-```bash
-npm install grok-retry-memes
-# or
-yarn add grok-retry-memes
-```
-
 ## Usage
 
 ```bash
