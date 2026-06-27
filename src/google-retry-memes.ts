@@ -37,7 +37,7 @@ export type GeminiRetryNotifyInfo = {
   status?: number;
 };
 
-/** Сообщение перед очередным ретраем */
+/** Message before the next retry */
 export function formatGeminiRetryNotifyMessage(info: GeminiRetryNotifyInfo): string {
   const flake = pickRandomGeminiFlakeLine();
   const http =
@@ -48,12 +48,12 @@ export function formatGeminiRetryNotifyMessage(info: GeminiRetryNotifyInfo): str
   return `${flake}\n\n${tech}`;
 }
 
-/** Финальное уведомление об ошибке */
+/** Final error notification */
 export function formatGeminiFailureNotifyMessage(technicalLine: string): string {
   return `${pickRandomGeminiFlakeLine()}\n\n${technicalLine}`;
 }
 
-/** Когда ретраи закончились */
+/** When retries are exhausted */
 const GEMINI_EXHAUSTED_RETRY_LINES = [
   "Gemini has been rate limited for asking too many uncomfortable questions. We've exhausted all retries. Try again later (or never).",
   "Google's safety team is still reviewing whether your prompt is allowed in 2026. Retries exhausted.",
